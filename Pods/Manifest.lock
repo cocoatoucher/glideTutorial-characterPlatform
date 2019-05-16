@@ -1,0 +1,16 @@
+PODS:
+  - GlideEngine (1.0.3)
+
+DEPENDENCIES:
+  - GlideEngine (~> 1.0.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GlideEngine
+
+SPEC CHECKSUMS:
+  GlideEngine: 7b196205a4c02c6c01a94c53da1dfc5531082d66
+
+PODFILE CHECKSUM: 6704972b701f3795ed93c0ea5605d5bd6e36f80d
+
+COCOAPODS: 1.7.0.rc.1
