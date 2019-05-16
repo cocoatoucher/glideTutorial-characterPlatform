@@ -36,6 +36,20 @@ class Scene: GlideScene {
         spriteNodeComponent.spriteNode.texture = SKTexture(imageNamed: "platform")
         entity.addComponent(spriteNodeComponent)
         
+        // Add a collider to the platform.
+        let colliderComponent = ColliderComponent(categoryMask: GlideCategoryMask.none,
+                                                  size: CGSize(width: 640, height: 64),
+                                                  offset: .zero,
+                                                  leftHitPointsOffsets: (10, 10),
+                                                  rightHitPointsOffsets: (10, 10),
+                                                  topHitPointsOffsets: (10, 10),
+                                                  bottomHitPointsOffsets: (10, 10))
+        entity.addComponent(colliderComponent)
+        
+        // Make platform snappable.
+        let snappableComponent = SnappableComponent(providesOneWayCollision: false)
+        entity.addComponent(snappableComponent)
+        
         return entity
     }
 }
