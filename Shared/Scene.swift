@@ -21,6 +21,10 @@ class Scene: GlideScene {
         // Position in roughly in the middle of macOS app window.
         // Keep in mind that x:0, y:0 is the bottom left corner of the scene in SpriteKit.
         addEntity(platformEntity(at: CGPoint(x: 512, y: 150)))
+        
+        // Add a character entity to the scene at an arbitrary but reasonable position.
+        let characterEntity = CharacterEntity(initialNodePosition: CGPoint(x: 200, y: 300))
+        addEntity(characterEntity)
     }
     
     func platformEntity(at position: CGPoint) -> GlideEntity {
