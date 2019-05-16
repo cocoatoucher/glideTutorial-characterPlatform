@@ -32,5 +32,17 @@ class CharacterEntity: GlideEntity {
         // Make character snapper.
         let snapperComponent = SnapperComponent()
         addComponent(snapperComponent)
+        
+        // Make character be able to move horizontally.
+        var config = HorizontalMovementComponent.sharedConfiguration
+        // Set character's fixed velocity to 30.0.
+        config.fixedVelocity = 30.0
+        let horizontalMovementComponent = HorizontalMovementComponent(movementStyle: .fixedVelocity, configuration: config)
+        addComponent(horizontalMovementComponent)
+        
+        // Make character controllable via input handling.
+        // `playerIndex` parameter is actually the mapping to input handling.
+        let playableCharacterComponent = PlayableCharacterComponent(playerIndex: 0)
+        addComponent(playableCharacterComponent)
     }
 }
