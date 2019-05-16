@@ -16,7 +16,10 @@ class CharacterEntity: GlideEntity {
         addComponent(spriteNodeComponent)
         
         // Make character be affected by physics forces, in this case gravity.
-        let kinematicsBodyComponent = KinematicsBodyComponent()
+        var kinematicsBodyConfiguration = KinematicsBodyComponent.sharedConfiguration
+        // Allow character gain its custom jumping speed.
+        kinematicsBodyConfiguration.maximumVerticalVelocity = 30.0
+        let kinematicsBodyComponent = KinematicsBodyComponent(configuration: kinematicsBodyConfiguration)
         addComponent(kinematicsBodyComponent)
         
         // Add a collider to the character.
@@ -50,6 +53,13 @@ class CharacterEntity: GlideEntity {
         // Add a custom component for the character for managing texture animations.
         let characterComponent = CharacterComponent()
         addComponent(characterComponent)
+        
+        // Make the character jump.
+        var jumpConfiguration = JumpComponent.sharedConfiguration
+        // Set the character's jumping speed.
+        jumpConfiguration.jumpingVelocity = 30.0
+        let jumpComponent = JumpComponent(configuration: jumpConfiguration)
+        addComponent(jumpComponent)
     }
     
     func setupTextureAnimations() {
