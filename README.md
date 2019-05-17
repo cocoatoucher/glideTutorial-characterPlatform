@@ -19,4 +19,4 @@ For example, if you want to start directly with Part 3 of the tutorial you can c
 ## Assets
 Download assets used in the tutorial from [here](https://github.com/cocoatoucher/glideTutorial-characterPlatform/raw/master/Docs/Assets.zip).
 
-Character and platform art is from [https://opengameart.org/content/platform-pack]()
+Character and platform art is from [https://opengameart.org/content/platform-pack](https://opengameart.org/content/platform-pack)
