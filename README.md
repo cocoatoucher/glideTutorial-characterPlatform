@@ -7,7 +7,7 @@
 You can find the tutorial on YouTube glide engine channel or by clicking the gif below.
 
 <p align="center">
-<a target="_blank" rel="noopener noreferrer" href="https://youtu.be/XW5ysnFs6Z4">
+<a target="_blank" rel="noopener noreferrer" href="https://youtu.be/Fx7Cv6-WjMQ">
 <img src="https://github.com/cocoatoucher/glideTutorial-characterPlatform/raw/master/Docs/trailer.gif" width="400" max-width="80%" alt="glide character and platform tutorial on YouTube">
 </a>
 </p>
